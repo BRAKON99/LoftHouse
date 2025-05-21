@@ -1,0 +1,26 @@
+.info {
+    position: relative;
+    font-size: 18px;
+
+    @include mediaTablet {
+        font-size: 16px;
+    }
+    
+    &--map, &--tel {
+        padding-left: 35px;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 21px;
+            height: 21px;
+        }
+    }
+    &--map::before {
+        background: url("../assets/icons/header/placeholder.svg") no-repeat;
+    }
+    &--tel::before {
+        background: url("../assets/icons/header/phone-call.svg") no-repeat;
+    }
+}

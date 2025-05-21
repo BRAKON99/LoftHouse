@@ -1,0 +1,49 @@
+.cta {
+    padding: 180px 0;
+    background: url("../assets/img/main/Rectangle.jpg") no-repeat;
+
+    @include mediaTablet {
+        padding: 90px 0;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        @include mediaTablet {
+            grid-template-columns: 1fr;
+        }
+        .cta__text {
+            max-width: 540px;
+            
+            @include mediaTablet {
+                max-width: inherit;
+            }
+            &-txt {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+
+                @include mediaTablet {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 30px;
+        align-items: center;
+
+        @include mediaTablet {
+            grid-template-columns: 1fr;
+        }
+    }
+}

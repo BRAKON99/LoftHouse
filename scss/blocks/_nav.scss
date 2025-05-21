@@ -1,0 +1,23 @@
+.nav {
+    @include mediaTablet {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 20px;
+
+        &-item {
+            font-size: 14px;
+        }
+    }
+}
+
+.nav__btn {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+    }
+}
+
